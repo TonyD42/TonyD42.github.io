@@ -1,0 +1,19 @@
+body {
+font-family: 'Roboto', sans-serif; font-weight: 400;
+background-color: #2b2d42;
+color: #EDF2F4;
+}
+h1{
+background-color: #d90429;
+margin-bottom: 0;
+}
+h2{
+background-color: #d90429;
+margin-top: 0;
+}
+h3{
+background-color: #d90429;
+}
+a {
+color:  #EDF2F4;
+}	

@@ -1,0 +1,39 @@
+
+body{ 
+	color: #663300;
+	background-color: #E6CC80;
+	font-family: 'Roboto', sans-serif; font-weight: 600;
+	}
+
+
+h2{
+	color: #663300;
+	font-family: 'Roboto', sans-serif; font-weight: 700;
+}
+h3{
+	color: #663300;
+	font-family: 'Roboto', sans-serif; font-weight: 700;
+	font-weight: bold;
+}	
+ul{
+	list-style-type: square;
+	text-align: left;
+}
+.fall {
+	font-weight: bold;
+	color: #B26B24;
+	font-family: 'Roboto', sans-serif; font-weight: 800;
+}
+#image {
+	float:right;
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+	font-size: 75%;
+}
+footer{
+	font-size: 75%;
+	text-align: center;
+	font-style: italic;
+	font-family: 'Roboto', sans-serif; font-weight: 400;
+}

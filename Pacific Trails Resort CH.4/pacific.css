@@ -127,7 +127,7 @@ background-color: #FFFFFF;}
 width: auto;
 box-shadow: none;}
 main{margin-left: 0;}
-nav{float: none;
+#nav{float: none;
 width: auto;
 text-align: center;
 padding: 0.5em;}

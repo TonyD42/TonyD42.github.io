@@ -1,0 +1,62 @@
+header, main, nav, footer, figure, figcaption {display: block;}
+body{
+    color: #0b059b;
+    background-color: #d8e1ff;
+}
+h1{
+    margin-left: 190px;
+    text-align: center;
+    color: #0b059b;
+}
+nav{
+    padding: 20px;
+    float: left;
+    width: 160px;
+}
+nav ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type:  none;
+    font-size: 1.5em;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:link{
+    color: #0b059b;
+}
+nav a:visited{
+    color: #344873;
+}
+nav a:hover{
+    color: #9b1517;
+}
+figure{
+    margin-right: 50px;
+    padding: 0;
+    float:right;
+}
+figcaption{
+    text-align: center;
+    color: #0b059b;
+}
+main ul{
+    position: absolute;
+    top: 150px;
+    font-size: 1.2em;
+}
+#skyline{
+    width: 1150px;
+    height: 500px;
+    background-image: url(skyline.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 2.5px solid #FFFFFF;
+
+}
+main {
+    margin-left: 190px;
+}
+footer{
+    text-align: center;
+}

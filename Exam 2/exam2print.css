@@ -1,12 +1,12 @@
-header, main, nav, footer, figure, figcaption {display: block;}
+
 body{
-    color: #FFFFFF;
+    color: black;
     background-color: #FFFFFF;
 }
 h1{
     margin-left: 190px;
     text-align: center;
-    color: #FFFFFF;
+    color: black;
 }
 nav{
 display: none;
@@ -30,9 +30,7 @@ nav a:hover{
     color: #9b1517;
 }
 figure{
-    margin-right: 50px;
-    padding: 0;
-    float:right;
+    display: none;
 }
 figcaption{
     text-align: center;

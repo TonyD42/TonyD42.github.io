@@ -1,47 +1,61 @@
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
 
-body{
+body {
     color: black;
     background-color: #FFFFFF;
 }
-h1{
+
+h1 {
     margin-left: 190px;
     text-align: center;
     color: black;
 }
-nav{
-display: none;
+
+nav {
+    display: none;
 }
+
 nav ul {
     padding-left: 0;
     margin: 0;
-    list-style-type:  none;
+    list-style-type: none;
     font-size: 1.5em;
 }
-nav a{
+
+nav a {
     text-decoration: none;
 }
-nav a:link{
+
+nav a:link {
     color: #0b059b;
 }
-nav a:visited{
+
+nav a:visited {
     color: #344873;
 }
-nav a:hover{
+
+nav a:hover {
     color: #9b1517;
 }
-figure{
+
+figure {
     display: none;
 }
-figcaption{
+
+figcaption {
     text-align: center;
     color: #FFFFFF;
 }
-main ul{
+
+main ul {
     position: absolute;
     top: 150px;
     font-size: 1.2em;
 }
-#skyline{
+
+#skyline {
     width: 1150px;
     height: 500px;
     background-image: url(skyline.jpg);
@@ -50,6 +64,7 @@ main ul{
     border: 2.5px solid #FFFFFF;
 
 }
+
 main {
     margin-left: 190px;
 }

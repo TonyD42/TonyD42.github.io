@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="caterers.css">
+</head>
+<body>
+<div id="wrapper">
+    <h1>Tony Deezy's Italian Catering</h1>
+    <iframe src="menu.html" width="200" height="450" style="float:right">
+        Your Browser Does Not Support This Feature
+    </iframe>
+    <nav>
+        <div id="nav">
+            <ul>
+                <li><a href="CateringIndex.html">Home</a></li>
+                <li><a href="OrderForm.html">Ordering</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h2>Order Form</h2>
+
+        <form>
+            <label for="Appetizer">*Appetizer</label>
+            <input type="text" name="Appetizer" id="Appetizer" onBlur="appToCaps()" required="required"
+                   placeholder="Choose One Appetizer">
+            <label for="mainDish">*Main Dish</label>
+            <input type="text" name="mainDish" id="mainDish" onBlur="mainToCaps()" required="required"
+                   placeholder="Choose One Main Dish">
+            <label for="dessert">*Dessert</label>
+            <input type="text" name="dessert" id="dessert" onBlur="mainToCaps()" required="required"
+                   placeholder="Choose One Dessert">
+            <label for="decorations">Would you like us to bring decorations?</label>
+            <input type="radio" name = "decorations" id = "decorations" onchange="setDecorations()">
+            <br>
+           <blockquote><label for="lightsBox">Christmas Lights</label>
+            <input type = "checkbox" name = "lightsBox" id = "lightsBox" disabled = "disabled" onchange="setDecorations()">
+            <br>
+            <label for = "ornamentsBox">Ornaments</label>
+            <input type="checkbox" name="ornamentsBox" id="ornamentsBox" disabled = "disabled" onchange="setDecorations()">
+            <label for = "garlandBox">Garland</label>
+            <input type="checkbox" name = "garlandBox" id = "garlandBox" disabled = "disabled" onchange="setDecorations()"></blockquote>
+            <label for="myEmail">*E-mail:</label>
+            <input type="email" name="myEmail" id="myEmail" required="required" size="35"
+                   placeholder="you@yourdomain.com">
+            <label for="myPhone">Phone Number:</label>
+            <input type="tel" name="myPhone" id="myPhone" maxlength="12" placeholder="(555)555-5555">
+            <label for="customRequest">Custom Requests</label>
+            <textarea name="customRequest" id="customRequest" rows="2" cols="30" placeholder="Custom orders on request"></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel" onclick="cancelInput()"/>
+        </form>
+    </main>
+</div>
+<script>
+    function appToCaps() {
+        var x = document.getElementById("Appetizer");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+<script>
+    function mainToCaps() {
+        var x = document.getElementById("mainDish");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+<script>
+    function cancelInput() {
+        document.getElementById("Appetizer").value = "Choose One Appetizer";
+        document.getElementById("mainDish").value = "Choose One Main Dish";
+        document.getElementById("dessert").value = "Choose One Dessert";
+    }
+</script>
+<script>
+    function setDecorations() {
+        var x = document.getElementById("decorations");
+        if (x.checked) {
+            document.getElementById("lightsBox").disabled = false;
+            document.getElementById("ornamentsBox").disabled = false;
+            document.getElementById("garlandBox").disabled = false;
+        } else {
+            document.getElementById("lightsBox").disabled = true;
+            document.getElementById("ornamentsBox").disabled = true;
+            document.getElementById("garlandBox").disabled = true;
+        }
+    }
+</script>
+</body>
+</html>

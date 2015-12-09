@@ -192,7 +192,7 @@ textarea {
     margin-bottom: 20px;
 }
 
-submit {
+Submit {
     margin-left: 130px;
 }
 video, embed{
@@ -347,7 +347,7 @@ figure {    position: absolute;
     input[type = "submit"] {
         margin-left: 0;
     }
-    gallery {
+    #gallery {
         display: none;
     }
 }

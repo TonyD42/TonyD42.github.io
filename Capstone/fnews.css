@@ -7,7 +7,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: #90C7E3;
+    background-color: #0e5a9a;
     min-height: 700px;
     min-width: 960px;
     max-width: 2048px;
@@ -17,7 +17,7 @@ h1{
 
 }
 header{
-    background-color: #000033;
+    background-color: #0e5a9a;
     color: #FFFFFF;
     background-image: url(ball.png);
     background-position: right;

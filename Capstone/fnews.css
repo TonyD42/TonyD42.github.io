@@ -1,0 +1,82 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: #90C7E3;
+    background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
+}
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #90C7E3;
+    min-height: 700px;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
+}
+h1{
+
+}
+header{
+    background-color: #000033;
+    color: #FFFFFF;
+    background-image: url(ball.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: left;
+    height: 150px;
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+p{
+margin-top: 50px;
+}
+main{
+    background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: block;
+    margin-left: 190px;
+    min-height: 550px;
+    text-align: left;
+}
+#nav{
+    max-height: 550px;
+}
+nav{
+    float: left;
+    margin-left: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    background-image: url(trophy.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+    background-size: 190px 275px;
+    width: 190px;
+    height: 572px;
+
+}
+nav ul{
+    margin-left: -20px;
+    list-style-type: none;
+}
+nav a{
+    color: white;
+}
+nav a:link{
+    text-decoration: none;
+}
+#player{
+    background-image: url(player.jpg);
+    float: right;
+    height: 166px;
+    width: 250px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: groove;
+}

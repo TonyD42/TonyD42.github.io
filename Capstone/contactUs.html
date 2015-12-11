@@ -5,7 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
     <title>Fantasy Injury News</title>
     <meta name="description"
-          content="Fantasy injury news test site for HTML Class">
+          content="Contact page for Fantasy injury news test site for HTML Class">
     <link rel="stylesheet" href="fnews.css">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
@@ -31,10 +31,62 @@
         </ul>
     </nav>
     <main>
-
+        <h2><b>Contact Us</b></h2>
+<h3>For problems or even for general start/sit advice.</h3>
+        <form>
+            <label for="yourName">*Your Name:</label>
+            <input type="text" name="yourName" id="yourName" onBlur="appToCaps()" required="required"
+                   placeholder="Your name here."><br><br>
+            <label for="question">*Question:</label>
+            <textarea name="question" id="question" rows="5" cols="30" placeholder="Ask us your question!"></textarea>
+           <div id = "paragraph"><p>How would you like for us to contact you?</p></div>
+            <input type="radio" name = "contactEmail" id = "contactEmail" onchange="unlockBox()">
+            <label for="myEmail">Email:</label>
+            <input type="email" name="myEmail" id="myEmail" size="35" placeholder="you@yourdomain.com" disabled = "disabled" onchange="unlockBox">
+            <br><br>
+            <input type = "radio" name = "phoneButton" id = "phoneButton" onchange = "unlockBox()">
+            <label for="myPhone">Phone Number:</label>
+            <input type="tel" name="myPhone" id="myPhone" maxlength="12" placeholder="(555)555-5555" disabled = "disabled" onchange = "unlockBox()">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel" onclick="cancelInput()"/>
+        </form>
     </main>
-
-
 </div>
+<script>
+    function appToCaps() {
+        var x = document.getElementById("Appetizer");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+<script>
+    function mainToCaps() {
+        var x = document.getElementById("mainDish");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+<script>
+    function cancelInput() {
+        document.getElementById("Appetizer").value = "Choose One Appetizer";
+        document.getElementById("mainDish").value = "Choose One Main Dish";
+        document.getElementById("dessert").value = "Choose One Dessert";
+    }
+</script>
+<script>
+    function unlockBox() {
+        var x = document.getElementById("contactEmail");
+        var y = document.getElementById("phoneButton")
+        if (x.checked) {
+            document.getElementById("myEmail").disabled = false;
+        } else {
+            document.getElementById("myEmail").disabled = true;
+        }
+        if (y.checked){
+            document.getElementById("myPhone").disabled = false;
+        }else{
+            document.getElementById("myPhone").disabled = true;
+        }
+    }
+</script>
 </body>
 </html>

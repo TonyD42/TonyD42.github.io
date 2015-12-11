@@ -1,7 +1,7 @@
 body{
     font-family: 'Roboto Slab', serif;
-    background-color: #90C7E3;
-    background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
+    background-color: #0e5a9a;
+    background-image: linear-gradient(to bottom, #FFFFFF, #1e269a);
 }
 #wrapper {
     margin-left: auto;
@@ -79,4 +79,7 @@ nav a:link{
     background-size: 100%;
     background-repeat: no-repeat;
     border: groove;
+}
+table{
+    text-align: center;
 }
